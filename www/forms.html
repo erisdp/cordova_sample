@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/libs/materialize.min.css" media="screen,projection" />
+    <title>Sample Forms</title>
+</head>
+
+<body>
+    <div class="app">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Sample Forms</a>
+                <a href="./index.html"><i class="left material-icons">skip_previous</i></a>
+            </div>
+        </nav>
+    </div>
+    <div class="main">
+        <!--Input fields-->
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                        <label for="disabled">Disabled</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input value="Alvin" id="first_name2" type="text" class="validate">
+                <label class="active" for="first_name2">First Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="input-field col s12">
+            <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <label>Materialize Select</label>
+        </div>
+        <div class="input-field col s12">
+            <select multiple>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <label>Materialize Multiple Select</label>
+        </div>
+        <div class="input-field col s12">
+            <select multiple>
+                <optgroup label="team 1">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                </optgroup>
+                <optgroup label="team 2">
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </optgroup>
+            </select>
+            <label>Optgroups</label>
+        </div>
+        <div class="input-field col s12 m6">
+            <select class="icons">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="" data-icon="img/sample-1.jpg" class="circle">example 1</option>
+                <option value="" data-icon="img/sample-1.jpg" class="circle">example 2</option>
+                <option value="" data-icon="img/yuna.jpg" class="circle">example 1</option>
+            </select>
+            <label>Images in select</label>
+        </div>
+        <div class="input-field col s12 m6">
+            <select class="icons">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="" data-icon="img/sample-1.jpg" class="left circle">example 1</option>
+                <option value="" data-icon="img/sample-1.jpg" class="left circle">example 2</option>
+                <option value="" data-icon="img/yuna.jpg" class="left circle">example 3</option>
+            </select>
+            <label>Images in select</label>
+        </div>
+        <label>Browser Select</label>
+        <select class="browser-default">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+        <form action="#">
+            <p>
+                <input name="group1" type="radio" id="test1" />
+                <label for="test1">Red</label>
+            </p>
+            <p>
+                <input name="group1" type="radio" id="test2" />
+                <label for="test2">Yellow</label>
+            </p>
+            <p>
+                <input class="with-gap" name="group1" type="radio" id="test3" />
+                <label for="test3">Green</label>
+            </p>
+            <p>
+                <input name="group1" type="radio" id="test4" disabled="disabled" />
+                <label for="test4">Brown</label>
+            </p>
+        </form>
+        <form action="#">
+            <p>
+                <input type="checkbox" id="test5" />
+                <label for="test5">Red</label>
+            </p>
+            <p>
+                <input type="checkbox" id="test6" checked="checked" />
+                <label for="test6">Yellow</label>
+            </p>
+            <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                <label for="filled-in-box">Filled in</label>
+            </p>
+            <p>
+                <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
+                <label for="test7">Green</label>
+            </p>
+            <p>
+                <input type="checkbox" id="test8" disabled="disabled" />
+                <label for="test8">Brown</label>
+            </p>
+        </form>
+        <!-- Switch -->
+        <div class="switch">
+            <label>
+                Off
+                <input type="checkbox">
+                <span class="lever"></span> On
+            </label>
+        </div>
+        <!-- Disabled Switch -->
+        <div class="switch">
+            <label>
+                Off
+                <input disabled type="checkbox">
+                <span class="lever"></span> On
+            </label>
+        </div>
+        <form action="#">
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>File</span>
+                    <input type="file">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                </div>
+            </div>
+        </form>
+        <form action="#">
+            <p class="range-field">
+                <input type="range" id="test5" min="0" max="100" />
+            </p>
+        </form>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/libs/materialize.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
